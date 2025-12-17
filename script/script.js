@@ -59,8 +59,41 @@ for (let i = 0; i < teamMembers.length; i++) {
                 <h3 class="w-100 my-0">${names}</h3>
                 <p class="w-100 my-0">${roles}</p>
                 <p>${emails}</p>
-            </div>`
+            </div>`;
 
         secondDiv.innerHTML += compilerHTML;
   
 }
+
+
+const firstForm = document.getElementById("firstForm");
+const inputNameId = document.getElementById("nameInput");
+const inputRoleId = document.getElementById("roleInput");
+const inputEmailId = document.getElementById("emailInput");
+const inputImageId = document.getElementById("imageInput");
+
+
+firstForm.addEventListener ('submit', (event) => {
+  event.preventDefault();
+
+  let inputName = inputNameId.value;
+  console.log(inputName);
+  
+  let inputRole = inputRoleId.value;
+  let inputEmail = inputEmailId.value;
+  let inputImage = inputImageId.value;
+
+  const insertHTML = `
+            <div class="d-flex flex-wrap w-30 my-3 gap-3">
+                <img class="" src="./${inputImage}" alt="">
+                <h3 class="w-100 my-0">${inputName}</h3>
+                <p class="w-100 my-0">${inputRole}</p>
+                <p>${inputEmail}</p>
+            </div>`;
+
+  secondDiv.innerHTML += insertHTML;
+}
+)
+
+
+
