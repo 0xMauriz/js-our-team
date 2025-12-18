@@ -6,6 +6,10 @@
     width: 30% !important;
 }
 
+.w-80 {
+    width: 80% !important;
+}
+
 .pl-30px {
     padding-left: 30px !important;
 };
