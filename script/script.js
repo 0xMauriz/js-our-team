@@ -85,7 +85,7 @@ firstForm.addEventListener ('submit', (event) => {
 
   const insertHTML = `
             <div class="d-flex flex-wrap w-30 my-3 gap-3">
-                <img class="" src="./${inputImage}" alt="">
+                <img class="" src="./img/${inputImage}" alt="">
                 <h3 class="w-100 my-0">${inputName}</h3>
                 <p class="w-100 my-0">${inputRole}</p>
                 <p>${inputEmail}</p>
